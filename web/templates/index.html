@@ -1,0 +1,44 @@
+{% extends "base.html" %} {% block content %}
+
+<div>
+    <div class="row">
+    <div class="col text-center">
+    <form id="upload-file" method="post" enctype="multipart/form-data">
+        <label for="imageUpload" class="upload-label">
+            Input Gambar 
+        </label>
+        <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg">
+    </form>
+    </div>
+    </div>
+
+    <div class="image-section" style="display:none;">
+        <div class="img-preview">
+            <div id="imagePreview">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <button type="button" class="btn btn-primary" id="btn-predict">Deteksi!</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="row">
+    <div class="col text-center">
+    <div class="loader" style="display:none;"></div>
+    </div>
+    </div>
+
+    <div class="row">
+    <div class="col text-center">
+    <h3 id="result">
+        <span> </span>
+    </h3>
+    </div>
+    </div>
+</div>
+
+{% endblock %}
