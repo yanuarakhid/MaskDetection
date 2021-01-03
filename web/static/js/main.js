@@ -42,11 +42,20 @@ $(document).ready(function () {
             processData: false,
             async: true,
             success: function (data) {
-                // Get and display the result
+                if (data == "Tidak Menggunakan Masker !") {
+                    // Get and display the result
                 $('.loader').hide();
                 $('#result').fadeIn(600);
-                $('#result').text(' Result:  ' + data);
+                $('#result').html('<h3 style="color: #dc3545;">Tidak Menggunakan Masker !</h3>');
                 console.log('Success!');
+                } else if (data == "Masker Terdeteksi") {
+                    // Get and display the result
+                $('.loader').hide();
+                $('#result').fadeIn(600);
+                $('#result').html('<h3 style="color: #28a745;">Masker Terdeteksi</h3>');
+                console.log('Success!');
+                }
+                
             },
         });
     });
