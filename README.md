@@ -1,4 +1,4 @@
-## IMPLEMENTASI CNN (CONVOLUTIONAL NEURAL NETWORK) UNTUK DETEKSI MASKER (PYTHON + KERAS + FLASK + BOOTSTRAP)
+## IMPLEMENTATION OF CNN (CONVOLUTIONAL NEURAL NETWORK) FOR FACE MASK DETECTION USING (PYTHON + KERAS + FLASK + BOOTSTRAP) WEB BASED
 
 <br>
 
@@ -6,7 +6,7 @@
 
 ![](https://i.imgur.com/Zg3YohJ.gif)
 
-## Aplikasi Dibuat dan Dikembangan Oleh : 
+## Developed by : 
 
 NAMA | NIM
 ------------ | -------------
